@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Stone_100: hsl(30, 54%, 90%);
+    --Stone_150: hsl(30, 18%, 87%);
+    --Stone_600: hsl(30, 10%, 34%);
+    --Stone_900: hsl(24, 5%, 18%);
+    --Brown_800: hsl(14, 45%, 36%);
+    --Rose_800: hsl(332, 51%, 32%);
+    --Rose_50: hsl(330, 100%, 98%);
+}
+
+body {
+    background-color: var(--Stone_100);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Outfit';
+    color: var(--Stone_600);
+    font-size: 16px;
+}
+
+p {
+    font-weight: 400;
+    margin: 1rem 0;
+
+}
+
+hr {
+    height: 1px; 
+    background-color: var(--Stone_150); 
+    border: none; 
+    margin: 10px 0; 
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+ul li {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul li::marker {
+    font-size: 0.8rem;
+    color: var(--Brown_800);
+}
+
+.outerCard {
+    width: 50%;
+    height: 100%;
+    background-color: var(--White);
+    margin: 4% 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCard {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+.innerCard section {
+    margin: 1.5rem 0;
+}
+
+
+.sectionTitle {
+    font-family: "Young Serif", serif;
+    color: var(--Brown_800);
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.imageContainer img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+#dishTitle {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    font-style: normal;
+    color: var(--Stone_900);
+    margin: 1rem 0;
+}
+
+
+.preparationContainer {
+    background-color: var(--Rose_50);
+    border-radius: 5px;
+    padding: 1rem;
+    padding-left: 1.5rem;
+}
+
+.preparationContainer > h4 {
+    color: var(--Rose_800);
+    margin-bottom: 0.7rem;
+}
+
+.preparationContainer li::marker {
+    color: var(--Rose_800);
+
+}
+
+.instruction ol {
+padding-left: 1rem;
+}
+
+ol li {
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+ol li::marker {
+    font-size: 0.8rem;
+    color: var(--Brown_800);
+}
+
+article .row {
+    display: flex;
+    background-color: red;
+    gap: 5rem;
+}
+
+.nutriTable {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 1rem;
+}
+
+
+.nutriTable td {
+    border-bottom: 1px var(--Stone_150) solid;
+    padding: 0.5rem 2.5rem;
+}
+
+
+.nutriTable tr:last-child td {
+    border-bottom: none;
+}
+
+.values {
+    color: var(--Brown_800);
+    font-weight: 400;
+    margin-left: 1rem;
+}
+
+.attribution {
+    font-size: 10px;
+    margin: auto;
+    margin-bottom: 1.2rem;
+}
+
+@media (max-width: 500px) {
+    .outerCard {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+    .innerCard {
+        width: 100%;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .innerCard section {
+        padding: 0 2.5rem;
+    }
+
+    .imageContainer img {
+        width: 100%;
+        border-radius: 0;
+    }
+}
